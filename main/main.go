@@ -73,5 +73,6 @@ func main()  {
 	// Constants()
 	// Loops()
 	// Arrays()
-	Structs()
+	// Structs()
+	Maps()
 }
