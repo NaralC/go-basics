@@ -66,5 +66,8 @@ func main()  {
 	// var diff = 1
 	// fmt.Println(diff)
 	// fmt.Println(global)
-	numbers()
+	// numbers()
+	// ExportedFunction()
+	// Strings()
+	StringBuilder()
 }
