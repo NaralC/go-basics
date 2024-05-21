@@ -72,5 +72,6 @@ func main()  {
 	// StringBuilder()
 	// Constants()
 	// Loops()
-	Arrays()
+	// Arrays()
+	Structs()
 }
