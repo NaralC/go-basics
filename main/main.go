@@ -69,5 +69,6 @@ func main()  {
 	// numbers()
 	// ExportedFunction()
 	// Strings()
-	StringBuilder()
+	// StringBuilder()
+	Constants()
 }
