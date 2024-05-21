@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func variablesAndTypes() {
 	// var name type = expression
@@ -38,8 +41,30 @@ func types() {
 	fmt.Println(f, c)
 }
 
+func numbers()  {
+	var x int16 = 1
+	y := 15.289
+	fmt.Printf("%T\n", x)
+	fmt.Printf("%T\n", y)
+	fmt.Println(y + 2)
+
+	fmt.Println(math.Ceil(3.99))
+	fmt.Println(math.Min(3.99, 3892))
+	fmt.Println(math.Abs(3 - 7))
+}
+
 func main()  {
 	// variablesAndTypes()
 	// pointers()
-	types()
+	// types()
+
+	// {
+	// 	var diff = 2	
+	// 	fmt.Println(diff)
+	// }
+
+	// var diff = 1
+	// fmt.Println(diff)
+	// fmt.Println(global)
+	numbers()
 }
