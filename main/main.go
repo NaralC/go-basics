@@ -70,5 +70,6 @@ func main()  {
 	// ExportedFunction()
 	// Strings()
 	// StringBuilder()
-	Constants()
+	// Constants()
+	Loops()
 }
