@@ -76,5 +76,6 @@ func main()  {
 	// Structs()
 	// Maps()
 	// Slices()
-	Switches()
+	// Switches()
+	TextTemplate()
 }
