@@ -98,7 +98,8 @@ func main()  {
 	// AdvFuncs()
 	// Interfaces()
 	// ErrorHandling()
-	ExceptionHandling()
+	// ExceptionHandling()
+	TypeSwitches()
 }
 
 func testFunc() {
