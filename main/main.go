@@ -75,5 +75,6 @@ func main()  {
 	// Arrays()
 	// Structs()
 	// Maps()
-	Slices()
+	// Slices()
+	Switches()
 }
