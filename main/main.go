@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"math"
 )
@@ -78,5 +79,61 @@ func main()  {
 	// Slices()
 	// Switches()
 	// TextTemplate()
-	JSON()
+	// JSON()
+	variadic(1,2,3,4,5,6)
+	sum(1, 5)
+	fmt.Println(nameLength("naral"))
+
+	res, err := sayHello("naral")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(res)
+	}
+
+	// fibonacci(10)
+	ptrNumber := 5
+	usePtr(&ptrNumber)
+	fmt.Println(ptrNumber)
+}
+
+func testFunc() {
+	fmt.Println("Yes")
+}
+
+// As many ints as you want
+func variadic(numbers ...int) {
+	for _, integer := range numbers {
+		fmt.Println(integer)
+	}
+}
+
+func sum(a int, b int) int {
+	return a + b
+}
+
+func nameLength(name string) (string, int) {
+	return name, len(name)
+}
+
+func sayHello(name string) (string, error) {
+	if len(name) == 0 {
+		return "", errors.New("Empty name btw")
+	} else {
+		return "Hello " + name, nil
+	}
+}
+
+func fibonacci(i int) int {
+	if i == 0 {
+		return 0
+	} else if i == 1 {
+		return 1
+	} else {
+		return fibonacci(i - 1) + fibonacci(i - 2)
+	}
+}
+
+func usePtr(i *int) {
+	*i = *i + 1
 }
