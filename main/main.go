@@ -77,5 +77,6 @@ func main()  {
 	// Maps()
 	// Slices()
 	// Switches()
-	TextTemplate()
+	// TextTemplate()
+	JSON()
 }
