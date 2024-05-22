@@ -80,21 +80,22 @@ func main()  {
 	// Switches()
 	// TextTemplate()
 	// JSON()
-	variadic(1,2,3,4,5,6)
-	sum(1, 5)
-	fmt.Println(nameLength("naral"))
+	// variadic(1,2,3,4,5,6)
+	// sum(1, 5)
+	// fmt.Println(nameLength("naral"))
 
-	res, err := sayHello("naral")
-	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println(res)
-	}
+	// res, err := sayHello("naral")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println(res)
+	// }
 
-	// fibonacci(10)
-	ptrNumber := 5
-	usePtr(&ptrNumber)
-	fmt.Println(ptrNumber)
+	// // fibonacci(10)
+	// ptrNumber := 5
+	// usePtr(&ptrNumber)
+	// fmt.Println(ptrNumber)
+	AdvFuncs()
 }
 
 func testFunc() {
