@@ -96,7 +96,8 @@ func main()  {
 	// usePtr(&ptrNumber)
 	// fmt.Println(ptrNumber)
 	// AdvFuncs()
-	Interfaces()
+	// Interfaces()
+	ErrorHandling()
 }
 
 func testFunc() {
