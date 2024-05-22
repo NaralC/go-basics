@@ -28,7 +28,7 @@ func ErrorHandling() {
 // type error interface {
 	// Error() string
 // }
-// The error body just has to implement a function called Error that returns a string. This is Duck Typing in Go.
+// The error body just has to implement a function called Error that returns a string. This is Duck Typing in Go. Doesn't have to look alike, just has to do the same
 
 func returnError(returnError bool) (string, error) {
 	if returnError {
