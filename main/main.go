@@ -74,5 +74,6 @@ func main()  {
 	// Loops()
 	// Arrays()
 	// Structs()
-	Maps()
+	// Maps()
+	Slices()
 }
