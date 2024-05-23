@@ -95,6 +95,7 @@ func pointers() {
 
 }
 
+var mutex = sync.Mutex{}
 var dbData = []string{ "id1", "id2", "id3", "id4", "id5" }
 var results = []string{}
 var waitGroup = sync.WaitGroup{}
@@ -104,7 +105,9 @@ func dbCall(i int) {
 	delay := 2000
 	time.Sleep(time.Duration(delay) * time.Millisecond)
 	fmt.Println("The result from the db is: ", dbData[i])
+	mutex.Lock()
 	results = append(results, dbData[i])
+	mutex.Unlock()
 	waitGroup.Done()
 }
 
