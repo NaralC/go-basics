@@ -99,7 +99,8 @@ func main()  {
 	// Interfaces()
 	// ErrorHandling()
 	// ExceptionHandling()
-	TypeSwitches()
+	// TypeSwitches()
+	Generics()
 }
 
 func testFunc() {
