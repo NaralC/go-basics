@@ -111,12 +111,7 @@ func dbCall(i int) {
 	waitGroup.Done()
 }
 
-func main() {
-	fmt.Println()
-
-	// typesAndStuff()
-	// pointers()
-
+func goRoutines() {
 	t0 := time.Now()
 
 	for i := 0; i < len(dbData); i += 1 {
@@ -127,4 +122,15 @@ func main() {
 	waitGroup.Wait()
 	fmt.Println(results)
 	fmt.Printf("Total execution time: %v", time.Since(t0))
+}
+
+func main() {
+	fmt.Println()
+
+	// typesAndStuff()
+	// pointers()
+
+	// goRoutines()
+
+	Channels()
 }
